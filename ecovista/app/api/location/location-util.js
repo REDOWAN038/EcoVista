@@ -29,20 +29,20 @@ const data = [
         latitude: 43.6534817,
         longitude: -79.3839347,
     },
-]
+];
 
 function getLocations() {
-    return data
+    return data;
 }
 
 function getLocationByName(location) {
-    if (!location) return null
+    if (!location) return null;
 
     const found = data.find(
         (item) => item.location.toLowerCase() === location.toLowerCase()
-    )
+    );
 
-    return found || {}
+    return found || {};
 }
 
-export { getLocationByName, getLocations }
+export { getLocationByName, getLocations };
